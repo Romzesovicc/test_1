@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'PingFangSC', sans-serif;
+  src:
+    url('../fonts/PingFangSC/Regular/font.woff2') format("woff2"),
+    url('../fonts/PingFangSC/Regular/font.woff') format("woff"),
+    url('../fonts/PingFangSC/Regular/font.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'PingFangSC', sans-serif;
+  src:
+    url('../fonts/PingFangSC/Medium/font.woff2') format("woff2"),
+    url('../fonts/PingFangSC/Medium/font.woff') format("woff"),
+    url('../fonts/PingFangSC/Medium/font.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'PingFangSC', sans-serif;
+  src:
+    url('../fonts/PingFangSC/Semibold/font.woff2') format("woff2"),
+    url('../fonts/PingFangSC/Semibold/font.woff') format("woff"),
+    url('../fonts/PingFangSC/Semibold/font.ttf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}

@@ -1,0 +1,413 @@
+@import "../../variables";
+
+.serviceCenterBlock {
+  width: 100%;
+  height: 1588px;
+  background-color: $pale-grey-100;
+
+  & > div:nth-child(1) {
+    width: 618px;
+    margin: 60px auto 0 auto;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.33;
+      margin: 0 0 24px 0;
+    }
+  }
+
+  & > div:nth-child(2) {
+    width: 618px;
+    margin: 0 auto 8px auto;
+
+    p {
+      font-size: 18px;
+      color: $grei-100;
+      line-height: 1.56;
+
+      b {
+        color: $ugly-purple-100;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .choise {
+    width: 618px;
+    margin: 0 auto;
+    border-bottom: 1px solid $white-two;
+    padding-bottom: 24px;
+    padding-top: 24px;
+
+    & > div:nth-child(1) {
+      width: 17px;
+      height: 56px;
+      font-size: 40px;
+      font-weight: 600;
+      color: $ugly-purple-100;
+    }
+
+    & > div:nth-child(2) {
+      width: 537px;
+      height: 84px;
+      font-size: 18px;
+      line-height: 1.56;
+      color: $grei-100;
+
+      b {
+        color: $ugly-purple-100;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .productName {
+    width: 618px;
+    margin: 0 auto;
+    border-bottom: 1px solid $white-two;
+
+    & > div:nth-child(1) {
+      width: 17px;
+      height: 56px;
+      font-size: 40px;
+      font-weight: 600;
+      color: $ugly-purple-100;
+    }
+
+    & > div:nth-child(2) {
+      width: 537px;
+      height: 84px;
+      font-size: 18px;
+      line-height: 1.56;
+      color: $grei-100;
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .note {
+    width: 617px;
+    height: 108px;
+    margin: 48px auto 0 auto;
+    border-left: 1px solid $ugly-purple-100;
+    background-color: $white-two;
+
+    p {
+      width: 520px;
+      font-size: 14px;
+      line-height: 1.43;
+      color: $grei-100;
+      margin: 0 auto;
+
+      b {
+        color: $black-100;
+      }
+    }
+  }
+
+  .androidfactory {
+    width: 618px;
+    height: 56px;
+    margin: 45px auto 0 auto;
+
+    p {
+      color: $grei-100;
+      font-size: 18px;
+      line-height: 1.56;
+      margin: 0;
+    }
+  }
+
+  .ifYouWant {
+    width: 618px;
+    margin: 45px auto 0 auto;
+
+    p {
+      color: $grei-100;
+      font-size: 18px;
+      line-height: 1.56;
+      margin: 0;
+    }
+  }
+
+  .getStartToday {
+    width: 778px;
+    height: 148px;
+    background-image: url("/assets/img/coverFinalBgrnd@2x.jpg");
+    background-size: cover;
+    margin: 48px auto 0 auto;
+    border-radius: 4px;
+
+    p {
+      color: $white-100;
+      font-size: 18px;
+      margin-top: 8px;
+
+      b {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.33;
+      color: $white-100;
+    }
+  }
+
+  .getStarTodaytInputButton {
+    .form {
+      input {
+        transition: 0.1s all;
+      }
+
+      input[disabled] {
+        border-color: #a3a3a3;
+        opacity: 0.8;
+      }
+
+      button[disabled] {
+        background-color: #dfc5e0;
+        border-color: transparent;
+      }
+
+      .errorBlock {
+        display: none;
+        color: $red-100 !important;
+        font-weight: 600;
+        position: absolute;
+      }
+
+      .error {
+        display: block;
+      }
+
+      .inputError {
+        border-color: $red-100 !important;
+      }
+    }
+
+    input {
+      font-size: 18px;
+      height: 48px;
+      color: $greyish-100;
+      line-height: 1.56;
+      background-color: $white-100;
+      border: solid 1px $input-100;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      padding-left: 12px;
+    }
+
+    button {
+      padding: 10px 24px 10px 24px;
+      background-color: $ugly-purple-100;
+      font-size: 18px;
+      height: 48px;
+      font-weight: 600;
+      color: $white-100;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border: solid 1px $ugly-purple-100;
+      outline: none;
+    }
+  }
+
+  & > div:last-child {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 960px) {
+  .serviceCenterBlock {
+    .getStartToday {
+      width: 700px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .serviceCenterBlock {
+    .getStartToday {
+      width: 600px;
+
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .serviceCenterBlock {
+    height: 1700px;
+
+    & > div:nth-child(1) {
+      width: 300px;
+    }
+
+    & > div:nth-child(2) {
+      width: 300px;
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .choise {
+      width: 350px;
+      height: 173px;
+
+      & > div:nth-child(1) {
+        width: 10px;
+        font-size: 20px;
+      }
+
+      & > div:nth-child(2) {
+        width: 300px;
+        font-size: 14px;
+      }
+    }
+
+    .productName {
+      width: 350px;
+
+      & > div:nth-child(1) {
+        width: 10px;
+        font-size: 20px;
+      }
+
+      & > div:nth-child(2) {
+        width: 300px;
+        font-size: 14px;
+      }
+    }
+
+    .note {
+      width: 300px;
+
+      p {
+        width: 250px;
+        font-size: 12px;
+      }
+    }
+
+    .androidfactory {
+      width: 300px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .ifYouWant {
+      width: 300px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .getStartToday {
+      width: 400px;
+      height: 148px;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceCenterBlock {
+    .getStartToday {
+      width: 300px;
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .getStartMobile {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          margin-bottom: 13px;
+          border-radius: 6px;
+        }
+
+        button {
+          border-radius: 6px;
+        }
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      & > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 380px) {
+  .serviceCenterBlock {
+    .getStartToday {
+      width: 300px;
+    }
+
+    & > div:nth-child(1) {
+      width: 290px;
+    }
+
+    & > div:nth-child(2) {
+      width: 290px;
+    }
+
+    .choise {
+      width: 290px;
+
+      & > div:nth-child(1) {
+        width: 20px;
+        font-size: 15px;
+      }
+
+      & > div:nth-child(2) {
+        width: 280px;
+        font-size: 14px;
+      }
+    }
+
+    .productName {
+      width: 290px;
+
+      & > div:nth-child(1) {
+        width: 20px;
+        font-size: 15px;
+      }
+
+      & > div:nth-child(2) {
+        width: 280px;
+        font-size: 14px;
+      }
+    }
+  }
+}

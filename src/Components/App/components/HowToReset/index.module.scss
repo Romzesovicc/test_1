@@ -1,0 +1,218 @@
+@import "../../variables";
+
+.main {
+  height: 1570px;
+  width: 100%;
+  background-color: $pale-grey-100;
+
+  & > div:nth-child(1) {
+    width: 940px;
+    height: 400px;
+    position: absolute;
+    top: 84px;
+  }
+
+  .background {
+    background-image: url("/assets/img/coverHeadBgrnd@2x.jpg");
+    background-size: cover;
+    border-radius: 6px;
+  }
+
+  & > div > p:nth-child(1) {
+    position: absolute;
+    top: 58px;
+    margin: 0 auto;
+    color: $white-100;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 112px;
+    height: 40px;
+
+    img {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+    }
+
+    p {
+      color: $white-80;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
+  .androidInfo {
+    width: 618px;
+    margin: 0;
+    position: absolute;
+    top: 548px;
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.33;
+    }
+
+    h3 {
+      margin-top: 64px;
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.33;
+    }
+
+    p {
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 1.56;
+      color: $grei-100;
+    }
+
+    b {
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 1.56;
+      color: $ugly-purple-100;
+      font-weight: normal;
+    }
+
+    div {
+      margin-bottom: 25px;
+      height: 84px;
+      border-left: 3px solid $ugly-purple-100;
+
+      .features {
+        font-weight: 600;
+        margin-left: 30px;
+        font-size: 20px;
+        line-height: 28px;
+        color: $ugly-purple-100;
+        border: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .main {
+    & > div:nth-child(1) {
+      width: 90%;
+    }
+  }
+}
+
+.main {
+  & > div > p:nth-child(1) {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    height: 1200px;
+
+    .androidInfo {
+      width: 100%;
+      padding: 0 50px 0 50px;
+      top: 500px;
+
+      h3 {
+        margin-top: 0;
+      }
+
+      b {
+        font-size: 14px;
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+
+      div {
+        .features {
+          font-size: 14px;
+          line-height: 1.56;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    height: 1300px;
+
+    & > div > p:nth-child(1) {
+      justify-content: center;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .main {
+    height: 1350px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main {
+    height: 1450px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main {
+    height: 1500px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main {
+    height: 1650px;
+
+    .androidInfo {
+      top: 500px;
+
+      div {
+        .features {
+          width: 200px;
+          height: 109px;
+          font-size: 11px;
+          line-height: 1.56;
+        }
+      }
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 355px) {
+  .main {
+    height: 1850px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    height: 1550px;
+
+    .androidInfo {
+      top: 300px;
+    }
+
+    & > div:nth-child(1) {
+      height: 200px;
+    }
+  }
+}
